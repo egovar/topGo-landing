@@ -42,12 +42,12 @@ a {
     font-size: 14px;
 }
 
-.blue-header-gradient-background {
+.blue-text-gradient-background {
     background: linear-gradient(90deg, #16A7D8 0%, #1290B4 100%);
     width: fit-content;
     height: fit-content;
 }
-.blue-header {
+.blue-text {
     background-color: white;
     margin: 0;
     mix-blend-mode: screen;
@@ -56,6 +56,99 @@ a {
 .gradient-border-wrapper {
     background: linear-gradient(90deg, rgba(22, 167, 216, 0.2) 0%, rgba(18, 144, 180, 0.2) 100%);
     padding: 1px;
+}
+
+.h1 {
+    font-size: 40px;
+    line-height: 141%;
+    letter-spacing: -0.015em;
+}
+
+.h3 {
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.015em;
+}
+
+.h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 141%;
+    letter-spacing: -0.015em;
+}
+
+.h5 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.015em;
+}
+
+.p {
+    font-family: "Open Sans", Montserrat, Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 122%;
+}
+
+.form__wrapper {
+    width: 440px;
+    box-shadow: 0 0 16px rgba(30, 0, 175, 0.06), 0 0 3px rgba(22, 167, 216, 0.1);
+    border-radius: 10px;
+}
+
+.form {
+    border-radius: 9px;
+    background-color: #FFF;
+    padding: 24px 40px;
+}
+
+.form__header {
+    width: 100%;
+}
+
+.form__title {
+    text-align: center;
+    padding: 0 0 8px;
+}
+
+.form__subtext {
+    text-align: center;
+    font-family: "Open Sans", Montserrat, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.form__fieldset {
+    border: none;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+    margin: 32px 0;
+}
+
+.form__input-wrapper {
+    position: relative;
+    box-shadow: 0 0 3px rgba(106, 157, 217, 0.15);
+    border-radius: 6px;
+}
+
+.form__input-label {
+    opacity: 0;
+    position: absolute;
+}
+
+.form__input {
+    width: 100%;
+    border: none;
+    padding: 14px 16px 13px 24px;
+    border-radius: 5px;
+}
+
+.form__button {
+    margin: auto;
+    display: flex;
 }
 
 /* Header */
@@ -134,9 +227,6 @@ a {
 .request__tagline {
     margin: 0 0 24px;
     color: #FDFDFD;
-    font-size: 40px;
-    line-height: 141%;
-    letter-spacing: -0.015em;
 }
 
 .wave {
@@ -166,28 +256,14 @@ a {
 .partners__header-gradient {
     margin: 0 77px 0 0;
 }
-
-.partners__header {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 141%;
-    letter-spacing: -0.015em;
-}
-
 /* Solutions */
-
-.solutions__header {
-    font-size: 40px;
-    line-height: 141%;
-    letter-spacing: -0.015em;
-}
 
 .solutions__header-gradient {
     margin: 0 0 56px;
 }
 
 .solutions__grid {
-    margin: 56px 0 0;
+    margin: 56px 0 110px;
     display: grid;
     grid-template-columns: 465px 465px;
     gap: 40px;
@@ -216,24 +292,55 @@ a {
     justify-content: center;
 }
 
-.solution-card__header {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: -0.015em;
-}
-
-.solution-card__info, .solution-card__list-item {
-    font-family: "Open Sans", Montserrat, Helvetica, Roboto, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 122%;
+.solution-card__info {
     color: #00131A;
 }
 
-.solution-card__info, .solution-card__list {
+.solution-card__info {
     margin: 8px 0 0;
 }
 
 .solution-card__list {
     padding: 0 0 0 22.3px;
 }
+
+/* Profit */
+
+.profit {
+    background-image: url("./assets/blur.png");
+    background-repeat: no-repeat;
+    background-size: 70% 540px;
+    background-position: 0 90px;
+}
+
+.profit__container {
+    padding: 92px 0 50px;
+}
+
+.profit__list {
+    color: #FDFDFD;
+    /*list-style: none;*/
+    padding: 0;
+    width: 317px;
+    margin: 0;
+}
+
+.profit__list-item_header {
+    margin: 0 0 8px;
+}
+
+.profit__list-item_header::marker {
+    content: none;
+}
+
+.profit__list-item:not(.profit__list-item_header) {
+    margin: 0 0 32px 22.3px;
+}
+
+.profit__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
