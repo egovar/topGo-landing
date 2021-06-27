@@ -11,43 +11,61 @@
     <a href="#" class="header__logo-link">
         <img class="header__logo-img" src="./assets/logo.svg" alt="TopGo logo">
     </a>
-    <nav class="navigation">
-        <ul class="navigation__list">
-            <li class="navigation__item">
-                <a href="#" class="navigation__link">
-                    Главная
-                </a>
-            </li>
-            <li class="navigation__item">
-                <a href="#" class="navigation__link">
-                    О нас
-                </a>
-            </li>
-            <li class="navigation__item">
-                <a href="#" class="navigation__link">
-                    Партнеры
-                </a>
-            </li>
-            <li class="navigation__item">
-                <a href="#" class="navigation__link">
-                    Курьерам
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <div class="user" id="user">
-        <button v-if="!is_logged_in"
-                class="user__button">
-            Войти
-        </button>
-        <div v-else
-             class="user__info">
-            <img src="./assets/profile-img.svg" alt="Avatar placeholder">
-            {{ name }}
-        </div>
+    <div class="container">
+        <nav class="navigation">
+            <a href="#" class="navigation__link">
+                Главная
+            </a>
+            <a href="#" class="navigation__link">
+                О нас
+            </a>
+            <a href="#" class="navigation__link">
+                Партнеры
+            </a>
+            <a href="#" class="navigation__link">
+                Курьерам
+            </a>
+            <div class="user" id="user">
+                <button v-if="!is_logged_in"
+                        class="user__button button"
+                        type="button">
+                    Войти
+                </button>
+                <div v-else
+                     class="user__info">
+                    <img src="./assets/profile-img.svg" alt="Avatar placeholder" class="user__avatar">
+                    <span class="user__name">
+                        {{ name }}
+                    </span>
+                </div>
+            </div>
+        </nav>
     </div>
 </header>
 <main class="main">
+    <div class="subheader">
+        <div class="container subheader__container">
+            <div class="request">
+                <h1 class="request__tagline">
+                    Современные решения для Вашего бизнеса
+                </h1>
+                <a href="#" class="button">Оставить заявку</a>
+            </div>
+            <img src="./assets/phones.png" alt="Два мобильных телефона" class="phones-image">
+        </div>
+    </div>
+    <img src="./assets/top-wave.svg" alt="Волна" class="wave">
+    <div class="container partners">
+        <div class="blue-header-gradient-background partners__header-gradient">
+            <h3 class="partners__header blue-header">
+                Наши партнеры
+            </h3>
+        </div>
+        <div class="partners__logos">
+            <img src="./assets/logo-topgo.svg" alt="Логотип партнёра TopGo" class="partners__logo">
+            <img src="./assets/logo-pizza.svg" alt="Логотип партнёра TopPizza" class="partners__logo">
+        </div>
+    </div>
 
 </main>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>

@@ -1,3 +1,5 @@
+/* Common rules */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap');
 
 * {
@@ -18,6 +20,143 @@ a {
     color: unset;
 }
 
-/* Common rules */
+.container {
+    width: 970px;
+    margin: auto;
+}
 
+.button {
+    appearance: none;
+    height: 38px;
+    width: 182px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #FEB43F 2.5%, #FECB3E 100%);
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.25);
+    color: #FDFDFD;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
 
+.blue-header-gradient-background {
+    background: linear-gradient(90deg, #16A7D8 0%, #1290B4 100%);
+    width: fit-content;
+    height: fit-content;
+}
+.blue-header {
+    background-color: white;
+    margin: 0;
+    mix-blend-mode: screen;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background: linear-gradient(90deg, #16A7D8 0%, #1290B4 100%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #FDFDFD;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.header__logo-link {
+    position: absolute;
+    left: 30px;
+}
+
+.header__logo-img {
+    width: 74px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0 0 0 auto;
+}
+
+.navigation__link {
+    margin-right: 75px;
+}
+
+.user__info {
+    display: flex;
+}
+
+.user__button {
+    height: 31px;
+    width: 119px;
+}
+
+.user__avatar {
+    margin: 0 10px 0 0;
+    width: 20px;
+}
+
+.user__name {
+    max-width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+/* Subheader */
+
+.subheader {
+    background: linear-gradient(90deg, #16A7D8 0%, #1290B4 100%);
+    padding: 30px 0 20px;
+}
+
+.phones-image {
+    width: 380px;
+}
+
+.subheader__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.request__tagline {
+    margin: 0 0 24px;
+    color: #FDFDFD;
+    font-size: 40px;
+    line-height: 141%;
+    letter-spacing: -0.015em;
+}
+
+.wave {
+    width: 100%;
+}
+
+/* Partners */
+
+.partners {
+    display: flex;
+    align-items: center;
+}
+
+.partners__logos {
+    display: flex;
+}
+
+.partners__logo {
+    height: 52px;
+}
+
+.partners__logo:not(:last-child) {
+    margin: 0 50px 0 0;
+}
+
+.partners__header-gradient {
+    margin: 0 77px 0 0;
+}
