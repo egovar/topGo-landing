@@ -320,14 +320,93 @@
     <div class="couriers">
         <div class="couriers__container container">
             <div class="couriers__info">
+                <h2 class="h1 couriers__header">Курьерам</h2>
+                <p class="couriers__subtext p">Работа курьером в Воронеже</p>
+                <div class="couriers__howto howto">
+                    <img src="./assets/request_white.svg" alt="Значок руки, печатающей сообщение" class="howto__picture">
+                    <div class="howto__text">
+                        <h6 class="howto__title h5">Оставьте заявку</h6>
+                        <p class="howto__description p">
+                            Менеджер нашей компании свяжется с Вами
+                        </p>
+                    </div>
 
+                    <img src="./assets/contract_white.svg" alt="Значок руки, печатающей сообщение" class="howto__picture">
+                    <div class="howto__text">
+                        <h6 class="howto__title h5">Договор</h6>
+                        <p class="howto__description p">
+                            Со всеми партнерами мы заключаем договор сотрудничества
+                        </p>
+                    </div>
+
+                    <img src="./assets/money_white.svg" alt="Значок руки, печатающей сообщение" class="howto__picture">
+                    <div class="howto__text">
+                        <h6 class="howto__title h5">Начните зарабатывать</h6>
+                        <p class="howto__description p">
+                            Со всеми партнерами мы заключаем договор сотрудничества
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="couriers__form">
 
+            <div class="gradient-border-wrapper form__wrapper form__wrapper_profit">
+                <form class="profit__form form form_profit" id="courier_form">
+                    <div class="blue-text-gradient-background form__header">
+                        <h4 class="form__title blue-text h3">
+                            Оставьте заявку
+                        </h4>
+                        <p class="form__subtext blue-text">
+                            и присоединяйся к нашей команде!
+                        </p>
+                    </div>
+                    <fieldset class="form__fieldset">
+                        <div class="gradient-border-wrapper form__input-wrapper">
+                            <label class="form__input-label" for="courier-name">Введите свое имя</label>
+                            <input type="text" placeholder="Имя" id="courier-name" class="form__input" required>
+                        </div>
+                        <div class="gradient-border-wrapper form__input-wrapper">
+                            <label class="form__input-label" for="courier-number">
+                                Введите свой номер телефона без +7/8
+                            </label>
+                            <input
+                                    type="text"
+                                    placeholder="+7 (900) 000-00-00"
+                                    id="courier-number"
+                                    class="form__input"
+                                    required>
+                        </div>
+                        <div class="gradient-border-wrapper form__input-wrapper">
+                            <label  class="form__input-label" for="courier-mail">Введите свой e-mail</label>
+                            <input
+                                    type="text"
+                                    placeholder="mail@mail.ru"
+                                    id="courier-mail"
+                                    class="form__input"
+                                    required>
+                        </div>
+                        <div class="gradient-border-wrapper form__input-wrapper">
+                            <label  class="form__input-label" for="courier-message">
+                                Введите свое сообщение
+                            </label>
+                            <input
+                                    type="text"
+                                    placeholder="Сообщение"
+                                    id="courier-message"
+                                    class="form__input"
+                                    required>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="button form__button">Оставить заявку</button>
+                </form>
             </div>
         </div>
-        <div class="couriers__container couriers__container_advantages container">
-
+        <div class="couriers__container couriers__container_advantages advantages container">
+            <h3 class="advantages__header h2">Что вы получите?</h3>
+            <ul class="advantages__list">
+                <li class="advantages__list-item">Заработок с нашим сервисом от 1500 р в день</li>
+                <li class="advantages__list-item">Удобный график</li>
+                <li class="advantages__list-item">Премии за высокий рейтинг</li>
+            </ul>
         </div>
     </div>
 </main>
