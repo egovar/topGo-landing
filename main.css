@@ -4,7 +4,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: Montserrat, Helvetica, Roboto, Arial, sans-serif;
+    font-family: Montserrat, "Open Sans", Helvetica, Roboto, Arial, sans-serif;
 }
 
 body {
@@ -51,6 +51,11 @@ a {
     background-color: white;
     margin: 0;
     mix-blend-mode: screen;
+}
+
+.gradient-border-wrapper {
+    background: linear-gradient(90deg, rgba(22, 167, 216, 0.2) 0%, rgba(18, 144, 180, 0.2) 100%);
+    padding: 1px;
 }
 
 /* Header */
@@ -143,6 +148,7 @@ a {
 .partners {
     display: flex;
     align-items: center;
+    margin-bottom: 112px;
 }
 
 .partners__logos {
@@ -159,4 +165,75 @@ a {
 
 .partners__header-gradient {
     margin: 0 77px 0 0;
+}
+
+.partners__header {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 141%;
+    letter-spacing: -0.015em;
+}
+
+/* Solutions */
+
+.solutions__header {
+    font-size: 40px;
+    line-height: 141%;
+    letter-spacing: -0.015em;
+}
+
+.solutions__header-gradient {
+    margin: 0 0 56px;
+}
+
+.solutions__grid {
+    margin: 56px 0 0;
+    display: grid;
+    grid-template-columns: 465px 465px;
+    gap: 40px;
+}
+
+.solution-card__wrapper {
+    border-radius: 10px;
+    box-shadow: 0 0 16px rgba(18, 144, 180, 0.1);
+}
+
+.solution-card {
+    border-radius: 9px;
+    background-color: #fff;
+    padding: 32px 24px;
+    display: flex;
+}
+
+.solution-card__image {
+    width: 92.5px;
+    margin: 0 17px 0 0;
+}
+
+.solution-card__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.solution-card__header {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.015em;
+}
+
+.solution-card__info, .solution-card__list-item {
+    font-family: "Open Sans", Montserrat, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 122%;
+    color: #00131A;
+}
+
+.solution-card__info, .solution-card__list {
+    margin: 8px 0 0;
+}
+
+.solution-card__list {
+    padding: 0 0 0 22.3px;
 }
