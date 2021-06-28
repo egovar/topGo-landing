@@ -7,7 +7,8 @@
     <title>TopGo</title>
 </head>
 <body>
-<header class="header">
+<header class="header" id="header">
+    <div :class="navigation_transparent_background_class" @click="toggleNav"></div>
     <a href="#" class="header__logo-link">
         <img class="header__logo-img" src="./assets/logo.svg" alt="TopGo logo">
     </a>
@@ -20,7 +21,7 @@
                 О нас
             </a>
             <a href="#" class="navigation__link">
-                Партнеры
+                Партнерам
             </a>
             <a href="#" class="navigation__link">
                 Курьерам
@@ -40,6 +41,53 @@
                 </div>
             </div>
         </nav>
+        <div :class="navigation_wrapper_class">
+            <nav class="navigation_mobile navigation">
+                <button class="navigation__close" @click.prevent="toggleNav">
+                    <img src="./assets/close-navbar.svg" alt="закрыть навигацию" class="navigation__cross">
+                </button>
+                <div class="blue-text-gradient-background navigation__link-wrapper">
+                    <a href="#" class="navigation__link blue-text">
+                        Главная
+                    </a>
+                </div>
+                <div class="blue-text-gradient-background navigation__link-wrapper">
+                    <a href="#" class="navigation__link blue-text">
+                        О нас
+                    </a>
+                </div>
+                <div class="blue-text-gradient-background navigation__link-wrapper">
+                    <a href="#" class="navigation__link blue-text">
+                        Партнерам
+                    </a>
+                </div>
+                <div class="blue-text-gradient-background navigation__link-wrapper">
+                    <a href="#" class="navigation__link blue-text">
+                        Курьерам
+                    </a>
+                </div>
+
+                <div class="user">
+                    <button v-if="!is_logged_in"
+                            class="user__button button"
+                            type="button">
+                        Войти
+                    </button>
+                    <div v-else
+                         class="user__info">
+                        <img src="./assets/profile-img.svg" alt="Avatar placeholder" class="user__avatar">
+                        <div class="blue-text-gradient-background">
+                        <span class="user__name blue-text">
+                            {{ name }}
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <button class="header__burger-button" @click.prevent="toggleNav">
+            <img src="./assets/burger-menu.svg" alt="Бургер-меню" class="header__burger-button-image">
+        </button>
     </div>
 </header>
 <main class="main">

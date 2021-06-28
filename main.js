@@ -1,7 +1,23 @@
-let user = new Vue({
-    el: '#user',
+let header = new Vue({
+    el: '#header',
     data: {
+        nav_is_opened: false,
         is_logged_in: false,
         name: "Name Name Name Name Name Name"
+    },
+    computed: {
+        navigation_wrapper_class: function() {
+            return "navigation__wrapper gradient-border-wrapper" +
+                (this.nav_is_opened ? "": "  gradient-border-wrapper_hidden");
+        },
+        navigation_transparent_background_class: function() {
+            return "navigation_transparent_background" +
+                (this.nav_is_opened ? " navigation_transparent_background_active" : "");
+        }
+    },
+    methods: {
+        toggleNav: function() {
+            this.nav_is_opened = !this.nav_is_opened;
+        }
     }
 });

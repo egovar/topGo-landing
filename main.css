@@ -109,6 +109,7 @@ ul {
 .gradient-border-wrapper {
     background: linear-gradient(90deg, rgba(22, 167, 216, 0.2) 0%, rgba(18, 144, 180, 0.2) 100%);
     padding: 1px;
+    height: fit-content;
 }
 
 /* Headers and text */
@@ -314,6 +315,66 @@ ul {
 
 }
 
+.header__burger-button, .navigation__close {
+    appearance: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.header__burger-button {
+    padding: 15px 0;
+    margin-left: auto;
+    display: none;
+}
+
+.navigation_mobile {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    padding: 72px 20px 40px 24px;
+    border-radius: 9px;
+    position: relative;
+}
+
+.gradient-border-wrapper_hidden {
+    display: none;
+}
+
+.navigation__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    z-index:5;
+    width: 163px;
+}
+
+.navigation__cross {
+    width: 12px;
+}
+
+.navigation__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.navigation_transparent_background {
+    display: none;
+    width: 100vw;
+    height: 500vh;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 4;
+}
+
+.navigation_transparent_background_active {
+    display: block;
+}
+
 @media screen and (max-width: 1200px){
     .header {
         font-size: 12px;
@@ -329,8 +390,34 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
-    .navigation {
+    .navigation:not(.navigation_mobile) {
         display: none;
+    }
+
+    .navigation__link {
+        margin-right: 0;
+    }
+
+    .navigation__link-wrapper {
+        margin-bottom: 24px;
+    }
+
+    .header {
+        border: none;
+        padding: 15px 0;
+    }
+
+    .header__burger-button {
+        display: block;
+    }
+
+    .header__logo-link {
+        left: 16px;
+    }
+
+    .user__name {
+        white-space: normal;
+        display: block;
     }
 }
 /* Subheader */
@@ -388,6 +475,7 @@ ul {
         z-index: 2;
         margin: auto;
         width: 90%;
+        max-width: 450px;
         left: 5vw;
     }
 
@@ -750,6 +838,7 @@ ul {
     .stages__row {
         justify-content: flex-start;
         margin-left: 27px;
+        width: unset;
     }
 
     .stage-item__description {
@@ -827,6 +916,7 @@ ul {
 
     .couriers__container:not(.couriers__container_advantages) {
         margin-bottom: 80px;
+        align-items: unset;
     }
 
     .advantages__list-item {
