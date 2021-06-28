@@ -76,6 +76,12 @@ ul {
     font-size: 14px;
 }
 
+@media screen and (max-width: 1200px){
+    .container {
+        width: 720px;
+    }
+}
+
 /* Gradients */
 
 .blue-text-gradient-background {
@@ -139,6 +145,16 @@ ul {
     font-weight: 400;
     font-size: 14px;
     line-height: 122%;
+}
+
+@media screen and (max-width: 1200px){
+    .h1 {
+        font-size: 30px;
+    }
+
+    .p {
+        font-size: 12px;
+    }
 }
 
 /* Form */
@@ -205,6 +221,16 @@ ul {
     display: flex;
 }
 
+@media screen and (max-width: 1200px){
+    .form {
+        padding: 24px 16px;
+    }
+
+    .form__wrapper {
+        width: 391px;
+    }
+}
+
 /* Header */
 
 .header {
@@ -220,7 +246,7 @@ ul {
 
 .header__logo-link {
     position: absolute;
-    left: 30px;
+    left: 40px;
 }
 
 .header__logo-img {
@@ -241,6 +267,7 @@ ul {
 
 .user__info {
     display: flex;
+    align-items: center;
 }
 
 .user__button {
@@ -259,6 +286,20 @@ ul {
     white-space: nowrap;
     overflow: hidden;
 
+}
+
+@media screen and (max-width: 1200px){
+    .header {
+        font-size: 12px;
+    }
+
+    .navigation__link {
+        margin-right: 44px;
+    }
+
+    .user__name {
+        max-width: 150px;
+    }
 }
 
 /* Subheader */
@@ -287,12 +328,31 @@ ul {
     width: 100%;
 }
 
+.wave_tablet, .wave_phone {
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+    .phones-image {
+        width: 320px;
+    }
+
+    .wave_tablet {
+        display: block;
+    }
+
+    .wave:not(.wave_tablet) {
+        display: none;
+    }
+}
+
 /* Partners */
 
 .partners {
     display: flex;
     align-items: center;
     margin-bottom: 112px;
+    position: relative;
 }
 
 .partners__logos {
@@ -310,6 +370,19 @@ ul {
 .partners__header-gradient {
     margin: 0 77px 0 0;
 }
+
+@media screen and (max-width: 1200px){
+    .partners {
+        margin-bottom: 80px;
+    }
+
+    .partners__header-gradient {
+        margin: 0;
+        position: absolute;
+        top: -63px;
+    }
+}
+
 /* Solutions */
 
 .solutions__header-gradient {
@@ -332,14 +405,11 @@ ul {
     border-radius: 9px;
     background-color: #fff;
     padding: 32px 24px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 92.5px 1fr;
+    gap: 17px;
     width: 100%;
     height: 100%;
-}
-
-.solution-card__image {
-    width: 92.5px;
-    margin: 0 17px 0 0;
 }
 
 .solution-card__text {
@@ -357,6 +427,15 @@ ul {
     padding: 0 0 0 22.3px;
 }
 
+@media screen and (max-width: 1200px){
+    .solutions__grid {
+        grid-template-columns: 465px;
+        gap: 24px;
+        margin: 40px auto 128px;
+        width: fit-content;
+    }
+}
+
 /* Profit */
 
 .profit {
@@ -364,11 +443,11 @@ ul {
     background-repeat: no-repeat;
     background-size: 70% 540px;
     background-position: 0 90px;
+    margin-bottom: 182px;
 }
 
 .profit__container {
     padding: 92px 0 50px;
-    margin-bottom: 182px;
 }
 
 .profit__list {
@@ -396,6 +475,18 @@ ul {
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: flex-start;
+}
+
+@media screen and (max-width: 1200px){
+    .profit {
+        background-position: -100px 110px;
+        background-size: 90% 450px;
+        margin-bottom: 154px;
+    }
+
+    .profit__list-item {
+        max-width: 225px;
+    }
 }
 
 /* Stages */
@@ -484,6 +575,38 @@ ul {
     max-width: 270px;
 }
 
+@media screen and (max-width: 1200px) {
+    .stages__scale {
+        left: 343.5px;
+    }
+
+    .stages__row:nth-child(2n + 1) > .stage-item {
+        margin-right: 404px;
+    }
+
+    .stages__row:nth-child(2n + 1) > .stage-item > .stage-item__picture {
+        margin: 0 17px 0 0;
+    }
+
+    .stages__row:nth-child(2n + 1) > .stage-item > .stage-item__text {
+        min-width: 172px;
+        max-width: 203px;
+    }
+
+    .stages__row:nth-child(2n + 2) > .stage-item > .stage-item__picture {
+        margin: 0 0 0 17px;
+    }
+
+    .stages__row:nth-child(2n + 2) > .stage-item > .stage-item__text {
+        min-width: 169px;
+        max-width: 193px;
+    }
+
+    .stages__grid {
+        margin: 40px 0 80px;
+    }
+}
+
 /* Couriers */
 
 .couriers {
@@ -533,4 +656,33 @@ ul {
     font-size: 16px;
     line-height: 120%;
     max-width: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+    .couriers {
+        padding: 40px 0 80px;
+    }
+
+    .howto__description {
+        max-width: 172px;
+    }
+
+    .howto__title {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .couriers__howto {
+        margin: 75px 0 0;
+    }
+
+    .couriers__container:not(.couriers__container_advantages) {
+        margin-bottom: 80px;
+    }
+
+    .advantages__list-item {
+        font-weight: 600px;
+        font-size: 12px;
+        max-width: 205px;
+    }
 }
