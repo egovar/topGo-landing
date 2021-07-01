@@ -41,8 +41,7 @@
                 </div>
             </div>
         </nav>
-        <div :class="navigation_wrapper_class">
-            <nav class="navigation_mobile navigation">
+            <nav :class="navigation_class" class="">
                 <button class="navigation__close" @click.prevent="toggleNav">
                     <img src="./assets/close-navbar.svg" alt="закрыть навигацию" class="navigation__cross">
                 </button>
@@ -84,7 +83,6 @@
                     </div>
                 </div>
             </nav>
-        </div>
         <button class="header__burger-button" @click.prevent="toggleNav">
             <img src="./assets/burger-menu.svg" alt="Бургер-меню" class="header__burger-button-image">
         </button>
@@ -123,8 +121,7 @@
             </h2>
         </div>
         <div class="solutions__grid">
-            <div class="solution-card__wrapper gradient-border-wrapper">
-                <div class="solutions__card solution-card">
+            <div class="solutions__card solution-card">
                     <div class="solution-card__image-wrapper">
                         <img src="./assets/watch.svg" alt="Изображение наручных часов" class="solution-card__image">
                     </div>
@@ -143,9 +140,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="solution-card__wrapper gradient-border-wrapper">
-                <div class="solutions__card solution-card">
+            <div class="solutions__card solution-card">
                     <div class="solution-card__image-wrapper">
                         <img src="./assets/money.svg" alt="Рука, держащая символ рубля" class="solution-card__image">
                     </div>
@@ -163,9 +158,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="solution-card__wrapper gradient-border-wrapper">
-                <div class="solutions__card solution-card">
+            <div class="solutions__card solution-card">
                     <div class="solution-card__image-wrapper">
                         <img src="./assets/credit-card.svg" alt="Рука, держащая банковскую карту" class="solution-card__image">
                     </div>
@@ -180,9 +173,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="solution-card__wrapper gradient-border-wrapper">
-                <div class="solutions__card solution-card">
+            <div class="solutions__card solution-card">
                     <div class="solution-card__image-wrapper">
                         <img src="./assets/laptop.svg" alt="Изображение работы за ноутбуком" class="solution-card__image">
                     </div>
@@ -197,9 +188,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="solution-card__wrapper gradient-border-wrapper">
-                <div class="solutions__card solution-card">
+            <div class="solutions__card solution-card">
                     <div class="solution-card__image-wrapper">
                         <img src="./assets/guarantee.svg" alt="Изображение гарантийного сертификата" class="solution-card__image">
                     </div>
@@ -214,7 +203,6 @@
                         </p>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
     <div class="profit" id="partners">
@@ -238,7 +226,7 @@
                 <li class="profit__list-item p">Курьеры как пешие, на&nbspвелосипеде&nbspили&nbspсамокате,
                     так&nbspи&nbspна&nbspавтомобиле.</li>
             </ul>
-            <div class="gradient-border-wrapper form__wrapper form__wrapper_profit">
+            <div class="form__wrapper form__wrapper_profit">
                 <form class="profit__form form form_profit" id="client_form">
                     <div class="blue-text-gradient-background form__header">
                         <h4 class="form__title blue-text h3">
@@ -249,11 +237,11 @@
                         </p>
                     </div>
                     <fieldset class="form__fieldset">
-                        <div class="gradient-border-wrapper form__input-wrapper">
+                        <div class="form__input-wrapper">
                             <label class="form__input-label" for="client-name">Введите свое имя</label>
                             <input type="text" placeholder="Имя" id="client-name" class="form__input" required>
                         </div>
-                        <div class="gradient-border-wrapper form__input-wrapper">
+                        <div class="form__input-wrapper">
                             <label class="form__input-label" for="client-number">
                                 Введите свой номер телефона без +7/8
                             </label>
@@ -264,7 +252,7 @@
                                     class="form__input"
                                     required>
                         </div>
-                        <div class="gradient-border-wrapper form__input-wrapper">
+                        <div class="form__input-wrapper">
                             <label  class="form__input-label" for="client-mail">Введите свой e-mail</label>
                             <input
                                     type="text"
@@ -273,7 +261,7 @@
                                     class="form__input"
                                     required>
                         </div>
-                        <div class="gradient-border-wrapper form__input-wrapper">
+                        <div class="form__input-wrapper">
                             <label  class="form__input-label" for="client-message">
                                 Введите свое сообщение
                             </label>
@@ -409,7 +397,7 @@
                 </div>
             </div>
 
-            <div class="gradient-border-wrapper form__wrapper form__wrapper_profit">
+            <div class="form__wrapper form__wrapper_profit">
                 <form class="profit__form form form_profit" id="courier_form">
                     <div class="blue-text-gradient-background form__header">
                         <h4 class="form__title blue-text h3">
@@ -420,11 +408,11 @@
                         </p>
                     </div>
                     <fieldset class="form__fieldset">
-                        <div class="gradient-border-wrapper form__input-wrapper">
+                        <div class="form__input-wrapper">
                             <label class="form__input-label" for="courier-name">Введите свое имя</label>
                             <input type="text" placeholder="Имя" id="courier-name" class="form__input" required>
                         </div>
-                        <div class="gradient-border-wrapper form__input-wrapper">
+                        <div class="form__input-wrapper">
                             <label class="form__input-label" for="courier-number">
                                 Введите свой номер телефона без +7/8
                             </label>
@@ -435,7 +423,7 @@
                                     class="form__input"
                                     required>
                         </div>
-                        <div class="gradient-border-wrapper form__input-wrapper">
+                        <div class="form__input-wrapper">
                             <label  class="form__input-label" for="courier-mail">Введите свой e-mail</label>
                             <input
                                     type="text"
@@ -444,7 +432,7 @@
                                     class="form__input"
                                     required>
                         </div>
-                        <div class="gradient-border-wrapper form__input-wrapper">
+                        <div class="form__input-wrapper">
                             <label  class="form__input-label" for="courier-message">
                                 Введите свое сообщение
                             </label>

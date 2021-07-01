@@ -6,9 +6,9 @@ let header = new Vue({
         name: "Name Name Name Name Name Name"
     },
     computed: {
-        navigation_wrapper_class: function() {
-            return "navigation__wrapper gradient-border-wrapper" +
-                (this.nav_is_opened ? "": "  gradient-border-wrapper_hidden");
+        navigation_class: function() {
+            return "navigation_mobile navigation" +
+                (this.nav_is_opened ? " navigation_visible": "");
         },
         navigation_transparent_background_class: function() {
             return "navigation_transparent_background" +
