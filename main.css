@@ -25,6 +25,10 @@
 
 /* Tags */
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     font-family: Montserrat, "Open Sans", Helvetica, Roboto, Arial, sans-serif;
@@ -71,7 +75,6 @@ ul {
     background: linear-gradient(90deg, #FEB43F 2.5%, #FECB3E 100%);
     border: none;
     border-radius: 6px;
-    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.25);
     color: #FDFDFD;
     cursor: pointer;
     font-weight: 600;
@@ -158,6 +161,12 @@ ul {
     line-height: 122%;
 }
 
+.p_s {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 100%;
+}
+
 @media screen and (max-width: 1200px){
     .h1 {
         font-size: 30px;
@@ -175,6 +184,10 @@ ul {
 
     .h4 {
         font-size: 18px;
+    }
+
+    .p_s {
+        font-size: 12px;
     }
 }
 
@@ -221,7 +234,7 @@ ul {
     position: relative;
     box-shadow: 0 0 3px rgba(106, 157, 217, 0.15);
     border-radius: 6px;
-    height: fit-content;
+    height: 44px;
     width: 100%;
 }
 
@@ -232,6 +245,7 @@ ul {
 
 .form__input {
     width: 100%;
+    height: 42px;
     border: none;
     padding: 14px 16px 13px 24px;
     border-radius: 5px;
@@ -440,6 +454,10 @@ ul {
 .request__tagline {
     margin: 0 0 24px;
     color: #FDFDFD;
+}
+
+.request__button {
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.25);
 }
 
 .wave {
@@ -890,7 +908,7 @@ ul {
 }
 
 .advantages__list-item {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     line-height: 120%;
     max-width: 300px;
