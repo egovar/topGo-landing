@@ -266,7 +266,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .form__wrapper {
         width: 100%;
     }
@@ -482,7 +482,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .subheader__container {
         z-index: 1;
     }
@@ -558,7 +558,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .partners {
         margin-bottom: 64px;
     }
@@ -630,7 +630,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .solutions__grid {
         grid-template-columns: 100%;
         gap: 16px;
@@ -699,7 +699,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .profit {
         background-position: -200px 50px;
@@ -834,7 +834,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .stages__scale {
         left: -10px;
     }
@@ -944,7 +944,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .couriers__container {
         flex-direction: column;
     }
