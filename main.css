@@ -901,13 +901,14 @@ ul {
 }
 
 .advantages__list {
+    padding-left: 18px;
+    font-weight: 400;
     display: flex;
     justify-content: space-between;
     margin: 31px 0 0;
 }
 
 .advantages__list-item {
-    font-weight: 600;
     font-size: 16px;
     line-height: 120%;
     max-width: 300px;
@@ -937,7 +938,7 @@ ul {
     }
 
     .advantages__list-item {
-        font-weight: 600;
+        font-weight: 400;
         font-size: 12px;
         max-width: 205px;
     }
