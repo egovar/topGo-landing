@@ -227,7 +227,7 @@
                     так&nbspи&nbspна&nbspавтомобиле.</li>
             </ul>
             <div class="form__wrapper form__wrapper_profit">
-                <form class="profit__form form form_profit" id="client_form">
+                <form class="profit__form form form_profit" id="client_form" @submit.prevent="sendClientForm">
                     <div class="blue-text-gradient-background form__header">
                         <h4 class="form__title blue-text h3">
                             Оставьте заявку
@@ -239,13 +239,22 @@
                     <fieldset class="form__fieldset">
                         <div class="form__input-wrapper">
                             <label class="form__input-label" for="client-name">Введите свое имя</label>
-                            <input type="text" placeholder="Имя" id="client-name" class="form__input" required>
+                            <input
+                                    v-model="name"
+                                    :disabled="send_disabled"
+                                    type="text"
+                                    placeholder="Имя"
+                                    id="client-name"
+                                    class="form__input"
+                                    required>
                         </div>
                         <div class="form__input-wrapper">
                             <label class="form__input-label" for="client-number">
-                                Введите свой номер телефона без +7/8
+                                Введите свой номер телефона
                             </label>
                             <input
+                                    v-model="phone"
+                                    :disabled="send_disabled"
                                     type="text"
                                     placeholder="+7 (900) 000-00-00"
                                     id="client-number"
@@ -255,6 +264,8 @@
                         <div class="form__input-wrapper">
                             <label  class="form__input-label" for="client-mail">Введите свой e-mail</label>
                             <input
+                                    v-model="email"
+                                    :disabled="send_disabled"
                                     type="text"
                                     placeholder="mail@mail.ru"
                                     id="client-mail"
@@ -266,6 +277,8 @@
                                 Введите свое сообщение
                             </label>
                             <input
+                                    v-model="message"
+                                    :disabled="send_disabled"
                                     type="text"
                                     placeholder="Сообщение"
                                     id="client-message"
@@ -273,7 +286,12 @@
                                     required>
                         </div>
                     </fieldset>
-                    <button type="submit" class="button form__button">Оставить заявку</button>
+                    <button
+                            :disabled="send_disabled"
+                            type="submit"
+                            class="button form__button">
+                        Оставить заявку
+                    </button>
                 </form>
             </div>
         </div>
@@ -398,7 +416,7 @@
             </div>
 
             <div class="form__wrapper form__wrapper_profit">
-                <form class="profit__form form form_profit" id="courier_form">
+                <form class="profit__form form form_profit" id="courier_form" @submit.prevent="sendCourierForm">
                     <div class="blue-text-gradient-background form__header">
                         <h4 class="form__title blue-text h3">
                             Оставьте заявку
@@ -410,13 +428,22 @@
                     <fieldset class="form__fieldset">
                         <div class="form__input-wrapper">
                             <label class="form__input-label" for="courier-name">Введите свое имя</label>
-                            <input type="text" placeholder="Имя" id="courier-name" class="form__input" required>
+                            <input
+                                    v-model="name"
+                                    :disabled="send_disabled"
+                                    type="text"
+                                    placeholder="Имя"
+                                    id="courier-name"
+                                    class="form__input"
+                                    required>
                         </div>
                         <div class="form__input-wrapper">
                             <label class="form__input-label" for="courier-number">
                                 Введите свой номер телефона без +7/8
                             </label>
                             <input
+                                    v-model="phone"
+                                    :disabled="send_disabled"
                                     type="text"
                                     placeholder="+7 (900) 000-00-00"
                                     id="courier-number"
@@ -426,6 +453,8 @@
                         <div class="form__input-wrapper">
                             <label  class="form__input-label" for="courier-mail">Введите свой e-mail</label>
                             <input
+                                    v-model="email"
+                                    :disabled="send_disabled"
                                     type="text"
                                     placeholder="mail@mail.ru"
                                     id="courier-mail"
@@ -437,6 +466,8 @@
                                 Введите свое сообщение
                             </label>
                             <input
+                                    v-model="message"
+                                    :disabled="send_disabled"
                                     type="text"
                                     placeholder="Сообщение"
                                     id="courier-message"
@@ -444,7 +475,12 @@
                                     required>
                         </div>
                     </fieldset>
-                    <button type="submit" class="button form__button">Оставить заявку</button>
+                    <button
+                            :disabled="send_disabled"
+                            type="submit"
+                            class="button form__button">
+                        Оставить заявку
+                    </button>
                 </form>
             </div>
         </div>

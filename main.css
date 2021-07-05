@@ -661,7 +661,7 @@ ul {
 
 .profit__list {
     color: #FDFDFD;
-    /*list-style: none;*/
+    list-style: none;
     padding: 0;
     width: 317px;
     margin: 0;
@@ -671,12 +671,15 @@ ul {
     margin: 0 0 8px;
 }
 
-.profit__list-item_header::marker {
-    content: "";
-}
-
 .profit__list-item:not(.profit__list-item_header) {
     margin: 0 0 32px 22.3px;
+    position: relative;
+}
+
+.profit__list-item:not(.profit__list-item_header)::before {
+    content: "•";
+    position: absolute;
+    left: -12px;
 }
 
 .profit__container {
@@ -901,7 +904,7 @@ ul {
 }
 
 .advantages__list {
-    padding-left: 18px;
+    padding-left: 18fpx;
     font-weight: 400;
     display: flex;
     justify-content: space-between;
