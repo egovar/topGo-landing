@@ -34,7 +34,7 @@ const client_form = new Vue({
     },
     methods: {
         sendClientForm: function() {
-            fetch('https://topgo.club/api/form', {
+            fetch('./api/form', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -55,7 +55,7 @@ const client_form = new Vue({
                         this.pop_up_visible = true;
                         alert('Заявка успешно отправлена!');
                     }
-                    else alert('При отправке формы произошла ошибка. Попробуйте ещё раз');
+                    else alert('При отправке формы произошла ошибка. Проверьте введенные данные и попробуйте ещё раз');
                     this.send_disabled = false;
                 })
                 .catch(err => {
@@ -82,7 +82,7 @@ const courier_form = new Vue({
     },
     methods: {
         sendCourierForm: function() {
-            fetch('https://topgo.club/api/form', {
+            fetch('./api/form', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -103,7 +103,7 @@ const courier_form = new Vue({
                         this.pop_up_visible = true;
                         alert('Заявка успешно отправлена!');
                     }
-                    else alert('При отправке формы произошла ошибка. Попробуйте ещё раз');
+                    else alert('При отправке формы произошла ошибка. Проверьте введенные данные и попробуйте ещё раз');
                     this.send_disabled = false;
                 })
                 .catch(err => {
