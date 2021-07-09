@@ -95,7 +95,7 @@
                 <h1 class="request__tagline h1">
                     Современные решения для Вашего бизнеса
                 </h1>
-                <a href="#" class="request__button button">Оставить заявку</a>
+                <a href="#partners" class="request__button button">Оставить заявку</a>
             </div>
             <img src="./assets/phones.png" alt="Два мобильных телефона" class="phones-image">
         </div>
@@ -259,6 +259,7 @@
                                     placeholder="+7 (900) 000-00-00"
                                     id="client-number"
                                     class="form__input"
+                                    pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$"
                                     required>
                         </div>
                         <div class="form__input-wrapper">
@@ -270,6 +271,7 @@
                                     placeholder="mail@mail.ru"
                                     id="client-mail"
                                     class="form__input"
+                                    pattern="[@]+"
                                     required>
                         </div>
                         <div class="form__input-wrapper">
@@ -439,7 +441,7 @@
                         </div>
                         <div class="form__input-wrapper">
                             <label class="form__input-label" for="courier-number">
-                                Введите свой номер телефона без +7/8
+                                Введите свой номер телефона
                             </label>
                             <input
                                     v-model="phone"
@@ -448,6 +450,7 @@
                                     placeholder="+7 (900) 000-00-00"
                                     id="courier-number"
                                     class="form__input"
+                                    pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$"
                                     required>
                         </div>
                         <div class="form__input-wrapper">
@@ -459,6 +462,7 @@
                                     placeholder="mail@mail.ru"
                                     id="courier-mail"
                                     class="form__input"
+                                    pattern="[@]+"
                                     required>
                         </div>
                         <div class="form__input-wrapper">
