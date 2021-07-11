@@ -101,8 +101,17 @@ ul {
     background: linear-gradient(90deg, #16A7D8 0%, #1290B4 100%);
     width: fit-content;
     height: fit-content;
+    width: -moz-fit-content;
+    height: -moz-fit-content;
+    position: relative;
 }
 .blue-text {
+    box-sizing: content-box;
+    position: relative;
+    padding: 2px 4px;
+    border: 1px solid white;
+    width:100%;
+    height: 100%;
     background-color: white;
     margin: 0;
     mix-blend-mode: screen;
@@ -113,6 +122,7 @@ ul {
     background: linear-gradient(90deg, rgba(22, 167, 216, 0.2) 0%, rgba(18, 144, 180, 0.2) 100%);
     padding: 1px;
     height: fit-content;
+    height: -moz-fit-content;
 }
 
 /* Headers and text */
@@ -622,6 +632,7 @@ ul {
         gap: 24px;
         margin: 40px auto 128px;
         width: fit-content;
+        width: -moz-fit-content;
     }
 
     .solution-card__info {
