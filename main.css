@@ -98,7 +98,7 @@ ul {
 /* Gradients */
 
 .blue-text-gradient-background {
-    background: linear-gradient(90deg, #16A7D8 0%, #1290B4 100%);
+    background: white;
     width: fit-content;
     height: fit-content;
     width: -moz-fit-content;
@@ -106,23 +106,11 @@ ul {
     position: relative;
 }
 .blue-text {
-    box-sizing: content-box;
-    position: relative;
-    padding: 2px 4px;
-    border: 1px solid white;
     width:100%;
     height: 100%;
     background-color: white;
     margin: 0;
-    mix-blend-mode: screen;
-    color: black;
-}
-
-.gradient-border-wrapper {
-    background: linear-gradient(90deg, rgba(22, 167, 216, 0.2) 0%, rgba(18, 144, 180, 0.2) 100%);
-    padding: 1px;
-    height: fit-content;
-    height: -moz-fit-content;
+    color: rgba(22, 167, 216, 1);
 }
 
 /* Headers and text */
