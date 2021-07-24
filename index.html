@@ -27,11 +27,11 @@
                 Курьерам
             </a>
             <div class="user" id="user">
-                <button v-if="!is_logged_in"
-                        class="user__button button"
-                        type="button">
+                <a v-if="!is_logged_in"
+                   href="./app_main"
+                   class="user__button button">
                     Войти
-                </button>
+                </a>
                 <div v-else
                      class="user__info">
                     <img src="./assets/profile-img.svg" alt="Avatar placeholder" class="user__avatar">
@@ -67,11 +67,11 @@
                 </div>
 
                 <div class="user">
-                    <button v-if="!is_logged_in"
-                            class="user__button button"
-                            type="button">
+                    <a v-if="!is_logged_in"
+                       href="./app_main"
+                       class="user__button button">
                         Войти
-                    </button>
+                    </a>
                     <div v-else
                          class="user__info">
                         <img src="./assets/profile-img.svg" alt="Avatar placeholder" class="user__avatar">
